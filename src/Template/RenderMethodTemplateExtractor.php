@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Template;
+namespace Symplify\TemplateChecker\Template;
 
 use Nette\Utils\Strings;
 use Symplify\SmartFileSystem\SmartFileInfo;

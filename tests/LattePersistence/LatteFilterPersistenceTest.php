@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Tests\LattePersistence;
+namespace Symplify\TemplateChecker\Tests\LattePersistence;
 
 use Iterator;
 use Latte\Engine;
-use Migrify\TemplateChecker\Tests\LattePersistence\Source\PlusFilterProvider;
-use Migrify\TemplateChecker\Tests\LattePersistence\Source\SomePresenter;
 use Nette\Bridges\ApplicationLatte\UIMacros;
 use PHPUnit\Framework\TestCase;
+use Symplify\TemplateChecker\Tests\LattePersistence\Source\PlusFilterProvider;
+use Symplify\TemplateChecker\Tests\LattePersistence\Source\SomePresenter;
 
 /**
- * This is a meta test for @see \Migrify\TemplateChecker\StaticCallWithFilterReplacer
+ * This is a meta test for @see \Symplify\TemplateChecker\StaticCallWithFilterReplacer
  * To verify that the filter behaves the same as static function
  */
 final class LatteFilterPersistenceTest extends TestCase
@@ -28,6 +28,7 @@ final class LatteFilterPersistenceTest extends TestCase
 
         // install nette/application macros, so we have {link} available
         UIMacros::install($this->latteEngine->getCompiler());
+
         $this->latteEngine->addProvider('uiControl', new SomePresenter());
         $this->latteEngine->addProvider('uiPresenter', new SomePresenter());
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Analyzer;
+namespace Symplify\TemplateChecker\Analyzer;
 
 use Nette\Utils\Strings;
 use Symplify\SmartFileSystem\SmartFileInfo;
@@ -11,7 +11,7 @@ use function interface_exists;
 use function trait_exists;
 
 /**
- * @see \Migrify\TemplateChecker\Tests\Analyzer\MissingClassesLatteAnalyzer\MissingClassesLatteAnalyzerTest
+ * @see \Symplify\TemplateChecker\Tests\Analyzer\MissingClassesLatteAnalyzer\MissingClassesLatteAnalyzerTest
  */
 final class MissingClassesLatteAnalyzer
 {

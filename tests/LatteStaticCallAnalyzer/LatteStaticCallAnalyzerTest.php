@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Tests\LatteStaticCallAnalyzer;
+namespace Symplify\TemplateChecker\Tests\LatteStaticCallAnalyzer;
 
 use Iterator;
-use Migrify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
-use Migrify\TemplateChecker\LatteStaticCallAnalyzer;
-use Migrify\TemplateChecker\ValueObject\ClassMethodName;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
+use Symplify\TemplateChecker\LatteStaticCallAnalyzer;
+use Symplify\TemplateChecker\ValueObject\ClassMethodName;
 
 final class LatteStaticCallAnalyzerTest extends AbstractKernelTestCase
 {

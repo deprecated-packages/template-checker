@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker;
+namespace Symplify\TemplateChecker;
 
-use Migrify\TemplateChecker\ValueObject\ClassMethodName;
 use Nette\Utils\DateTime;
 use Nette\Utils\Strings;
 use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\TemplateChecker\ValueObject\ClassMethodName;
 
 /**
- * @see \Migrify\TemplateChecker\Tests\LatteStaticCallAnalyzer\LatteStaticCallAnalyzerTest
+ * @see \Symplify\TemplateChecker\Tests\LatteStaticCallAnalyzer\LatteStaticCallAnalyzerTest
  */
 final class LatteStaticCallAnalyzer
 {

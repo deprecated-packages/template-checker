@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\ValueObject;
+namespace Symplify\TemplateChecker\ValueObject;
 
 final class Option
 {

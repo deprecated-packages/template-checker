@@ -17,7 +17,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->autowire()
         ->autoconfigure();
 
-    $services->load('Migrify\TemplateChecker\\', __DIR__ . '/../src')
+    $services->load('Symplify\TemplateChecker\\', __DIR__ . '/../src')
         ->exclude([__DIR__ . '/../src/HttpKernel', __DIR__ . '/../src/ValueObject']);
 
     // php-parser

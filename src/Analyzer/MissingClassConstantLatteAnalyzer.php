@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Analyzer;
+namespace Symplify\TemplateChecker\Analyzer;
 
 use Nette\Utils\Strings;
 use Symplify\SmartFileSystem\SmartFileInfo;
 use function defined;
 
 /**
- * @see \Migrify\TemplateChecker\Tests\Analyzer\MissingClassConstantLatteAnalyzer\MissingClassConstantLatteAnalyzerTest
+ * @see \Symplify\TemplateChecker\Tests\Analyzer\MissingClassConstantLatteAnalyzer\MissingClassConstantLatteAnalyzerTest
  */
 final class MissingClassConstantLatteAnalyzer
 {

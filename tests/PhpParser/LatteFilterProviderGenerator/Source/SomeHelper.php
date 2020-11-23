@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Tests\PhpParser\LatteFilterProviderGenerator\Source;
+namespace Symplify\TemplateChecker\Tests\PhpParser\LatteFilterProviderGenerator\Source;
 
 final class SomeHelper
 {

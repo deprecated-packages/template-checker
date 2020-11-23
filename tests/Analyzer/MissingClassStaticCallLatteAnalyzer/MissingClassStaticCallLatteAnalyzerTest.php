@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Tests\Analyzer\MissingClassStaticCallLatteAnalyzer;
+namespace Symplify\TemplateChecker\Tests\Analyzer\MissingClassStaticCallLatteAnalyzer;
 
 use Iterator;
-use Migrify\TemplateChecker\Analyzer\MissingClassStaticCallLatteAnalyzer;
-use Migrify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
 use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
 use Symplify\EasyTesting\StaticFixtureSplitter;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\TemplateChecker\Analyzer\MissingClassStaticCallLatteAnalyzer;
+use Symplify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
 
 final class MissingClassStaticCallLatteAnalyzerTest extends AbstractKernelTestCase
 {

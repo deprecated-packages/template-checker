@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Tests\LattePersistence\Source;
+namespace Symplify\TemplateChecker\Tests\LattePersistence\Source;
 
 final class SomeStaticClass
 {

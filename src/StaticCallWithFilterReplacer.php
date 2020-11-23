@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker;
+namespace Symplify\TemplateChecker;
 
 use Nette\Utils\DateTime;
 use Nette\Utils\Strings;
 use Symplify\SmartFileSystem\SmartFileInfo;
 
 /**
- * @see \Migrify\TemplateChecker\Tests\StaticCallWithFilterReplacer\StaticCallWithFilterReplacerTest
+ * @see \Symplify\TemplateChecker\Tests\StaticCallWithFilterReplacer\StaticCallWithFilterReplacerTest
  */
 final class StaticCallWithFilterReplacer
 {

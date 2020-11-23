@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Tests\Template\PossibleTemplatePathsResolver;
+namespace Symplify\TemplateChecker\Tests\Template\PossibleTemplatePathsResolver;
 
-use Migrify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
-use Migrify\TemplateChecker\Template\TemplatePathsResolver;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
+use Symplify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
+use Symplify\TemplateChecker\Template\TemplatePathsResolver;
 
 final class PossibleTemplatePathsResolverTest extends AbstractKernelTestCase
 {

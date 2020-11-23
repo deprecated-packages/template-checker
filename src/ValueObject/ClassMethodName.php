@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\ValueObject;
+namespace Symplify\TemplateChecker\ValueObject;
 
-use Migrify\MigrifyKernel\Exception\ShouldNotHappenException;
 use Nette\Utils\Strings;
 use ReflectionMethod;
 use Symplify\SmartFileSystem\SmartFileInfo;
-use function ucfirst;
+use Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
 
 final class ClassMethodName
 {

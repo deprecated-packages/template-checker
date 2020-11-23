@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\PhpParser;
+namespace Symplify\TemplateChecker\PhpParser;
 
-use Migrify\MigrifyKernel\Exception\ShouldNotHappenException;
 use PhpParser\Node;
 use PhpParser\Node\Stmt\ClassMethod;
 use PhpParser\NodeFinder;
 use PhpParser\Parser;
 use ReflectionMethod;
 use Symplify\SmartFileSystem\SmartFileSystem;
+use Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
 
 final class ReflectionMethodToClassMethodParser
 {
@@ -63,9 +63,10 @@ final class ReflectionMethodToClassMethodParser
         });
 
         if ($classMethod === null) {
-            $class = $reflectionMethod->getDeclaringClass()
-                ->getName();
-            $errorMessage = sprintf('Method "%s" could not found in "%s" class', $desiredMethodName, $class);
+            $reflectionClass = $reflectionMethod->getDeclaringClass();
+            $className = $reflectionClass->getName();
+
+            $errorMessage = sprintf('Method "%s" could not found in "%s" class', $desiredMethodName, $className);
             throw new ShouldNotHappenException($errorMessage);
         }
 

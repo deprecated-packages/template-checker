@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\NodeFactory;
+namespace Symplify\TemplateChecker\NodeFactory;
 
 use PhpParser\Builder\Method;
 use PhpParser\Node\Expr\ClassConstFetch;

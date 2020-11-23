@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Migrify\MigrifyKernel\Bootstrap\KernelBootAndApplicationRun;
-use Migrify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
+use Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
+use Symplify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
 
 $possibleAutoloadPaths = [
     // after split package

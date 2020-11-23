@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Analyzer;
+namespace Symplify\TemplateChecker\Analyzer;
 
 use Nette\Utils\Strings;
 use Symplify\SmartFileSystem\SmartFileInfo;
 use Webmozart\Assert\Assert;
 
 /**
- * @see \Migrify\TemplateChecker\Tests\Analyzer\MissingClassStaticCallLatteAnalyzer\MissingClassStaticCallLatteAnalyzerTest
+ * @see \Symplify\TemplateChecker\Tests\Analyzer\MissingClassStaticCallLatteAnalyzer\MissingClassStaticCallLatteAnalyzerTest
  */
 final class MissingClassStaticCallLatteAnalyzer
 {

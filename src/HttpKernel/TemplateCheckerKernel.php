@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\HttpKernel;
+namespace Symplify\TemplateChecker\HttpKernel;
 
-use Migrify\MigrifyKernel\HttpKernel\AbstractMigrifyKernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
+use Symplify\SymplifyKernel\HttpKernel\AbstractSymplifyKernel;
 
-final class TemplateCheckerKernel extends AbstractMigrifyKernel
+final class TemplateCheckerKernel extends AbstractSymplifyKernel
 {
     public function registerContainerConfiguration(LoaderInterface $loader): void
     {

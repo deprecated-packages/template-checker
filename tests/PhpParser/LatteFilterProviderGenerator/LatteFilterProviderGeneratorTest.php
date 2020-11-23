@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Tests\PhpParser\LatteFilterProviderGenerator;
+namespace Symplify\TemplateChecker\Tests\PhpParser\LatteFilterProviderGenerator;
 
-use Migrify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
-use Migrify\TemplateChecker\PhpParser\LatteFilterProviderGenerator;
-use Migrify\TemplateChecker\Tests\PhpParser\LatteFilterProviderGenerator\Source\SomeHelper;
-use Migrify\TemplateChecker\ValueObject\ClassMethodName;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\TemplateChecker\HttpKernel\TemplateCheckerKernel;
+use Symplify\TemplateChecker\PhpParser\LatteFilterProviderFactory;
+use Symplify\TemplateChecker\Tests\PhpParser\LatteFilterProviderGenerator\Source\SomeHelper;
+use Symplify\TemplateChecker\ValueObject\ClassMethodName;
 
 final class LatteFilterProviderGeneratorTest extends AbstractKernelTestCase
 {
     /**
-     * @var LatteFilterProviderGenerator
+     * @var LatteFilterProviderFactory
      */
     private $latteFilterProviderGenerator;
 
     protected function setUp(): void
     {
         self::bootKernel(TemplateCheckerKernel::class);
-        $this->latteFilterProviderGenerator = self::$container->get(LatteFilterProviderGenerator::class);
+        $this->latteFilterProviderGenerator = self::$container->get(LatteFilterProviderFactory::class);
     }
 
     public function test(): void
@@ -30,7 +30,7 @@ final class LatteFilterProviderGeneratorTest extends AbstractKernelTestCase
             __DIR__ . '/Source/SomeHelper.php'
         ));
 
-        $generatedContent = $this->latteFilterProviderGenerator->generate($classMethodName);
+        $generatedContent = $this->latteFilterProviderGenerator->createFromClassMethodName($classMethodName);
         $this->assertStringEqualsFile(__DIR__ . '/Fixture/expected_filter_provider.php.inc', $generatedContent);
     }
 }

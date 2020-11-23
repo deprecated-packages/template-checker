@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Migrify\TemplateChecker\Tests\Analyzer\MissingClassStaticCallLatteAnalyzer\Source;
+namespace Symplify\TemplateChecker\Tests\Analyzer\MissingClassStaticCallLatteAnalyzer\Source;
 
 final class ExistingClassStaticCall
 {
